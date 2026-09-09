@@ -20568,3 +20568,287 @@ msgid ""
 msgstr ""
 "Спокойствие: Группа находит еду, сокровища или другие полезные ресурсы. "
 "Вместо этого Смотритель может раскрыть главную особенность области."
+
+#: app/templates/main/tools.html:1
+msgid "Monsters"
+msgstr "Монстры"
+
+#: app/templates/main/tools.html:1
+msgid "Events"
+msgstr "События"
+
+#: app/templates/main/tools.html:1
+msgid "Worldbuilding"
+msgstr "Создание мира"
+
+#: app/templates/main/tools.html:1
+msgid "Random Monster"
+msgstr "Случайный монстр"
+
+#: app/templates/main/tools.html:1
+msgid "Custom Monster"
+msgstr "Свой монстр"
+
+#: app/templates/main/tools.html:1
+msgid "Reaction Roll"
+msgstr "Бросок реакции"
+
+#: app/templates/main/tools.html:1
+msgid "Dungeon Events"
+msgstr "События в подземелье"
+
+#: app/templates/main/tools.html:1
+msgid "Wilderness Events"
+msgstr "События в дикой местности"
+
+#: app/templates/main/tools.html:1
+msgid "Faction"
+msgstr "Фракция"
+
+#: app/templates/main/tools.html:1
+msgid "Faction Actions"
+msgstr "Действия фракций"
+
+#: app/templates/main/tools.html:1
+msgid "NPC"
+msgstr "НИП"
+
+#: app/templates/main/tools.html:1
+msgid "Relics"
+msgstr "Реликвии"
+
+#: app/templates/main/tools.html:1
+msgid "Spellbooks"
+msgstr "Книги заклинаний"
+
+#: app/templates/main/tools.html:1
+msgid "Spring (season)"
+msgstr "Весна"
+
+#: app/templates/main/tools.html:1
+msgid "Summer"
+msgstr "Лето"
+
+#: app/templates/main/tools.html:1
+msgid "Fall"
+msgstr "Осень"
+
+#: app/templates/main/tools.html:1
+msgid "Winter"
+msgstr "Зима"
+
+#: app/templates/main/tools.html:1
+msgid "Feature"
+msgstr "Особенность"
+
+#: app/templates/main/tools.html:1
+msgid "Quirks"
+msgstr "Причуды"
+
+#: app/templates/main/tools.html:1
+msgid "Attack"
+msgstr "Атака"
+
+#: app/templates/main/tools.html:1
+msgid "Critical Damage"
+msgstr "Критический урон"
+
+#: app/templates/main/tools.html:1
+msgid "Ability"
+msgstr "Способность"
+
+#: app/templates/main/tools.html:1
+msgid "Target"
+msgstr "Цель"
+
+#: app/templates/main/tools.html:1
+msgid "Dungeon Event"
+msgstr "Событие в подземелье"
+
+#: app/templates/main/tools.html:1
+msgid "Wilderness Event"
+msgstr "Событие в дикой местности"
+
+#: app/templates/main/tools.html:1
+msgid "Season"
+msgstr "Сезон"
+
+#: app/templates/main/tools.html:1
+msgid "Effect"
+msgstr "Эффект"
+
+#: app/templates/main/tools.html:1
+msgid "Examples"
+msgstr "Примеры"
+
+#: app/templates/main/tools.html:1
+msgid "Difficulty"
+msgstr "Сложность"
+
+#: app/templates/main/tools.html:1
+msgid "Landmark"
+msgstr "Ориентир"
+
+#: app/templates/main/tools.html:1
+msgid "Factions"
+msgstr "Фракции"
+
+#: app/templates/main/tools.html:1
+msgid "Rooms"
+msgstr "Комнаты"
+
+#: app/templates/main/tools.html:1
+msgid "Points of Interest"
+msgstr "Места интереса"
+
+#: app/templates/main/tools.html:1
+msgid "People"
+msgstr "Народ"
+
+#: app/templates/main/tools.html:1
+msgid "Terrain"
+msgstr "Местность"
+
+#: app/templates/main/tools.html:1
+msgid "Faction Action Result"
+msgstr "Результат действия фракции"
+
+#: app/templates/main/tools.html:1
+msgid "Consequence"
+msgstr "Последствие"
+
+#: app/templates/main/tools.html:1
+msgid "Impact"
+msgstr "Влияние"
+
+#: app/templates/main/tools.html:1
+msgid "Quirk"
+msgstr "Причуда"
+
+#: app/templates/main/tools.html:1
+msgid "Goal"
+msgstr "Цель"
+
+#: app/templates/main/tools.html:1
+msgid "Copy text"
+msgstr "Копирование текста"
+
+#: app/templates/main/tools.html:1
+msgid "Results copied to clipboard"
+msgstr "Результаты скопированы в буфер обмена"
+
+#: app/templates/main/tools.html:1
+msgid "Leader"
+msgstr "Предводитель"
+
+#: app/templates/main/tools.html:1
+msgid "Champion"
+msgstr "Поборник"
+
+#: app/templates/main/tools.html:1
+msgid "Envoy"
+msgstr "Посланник"
+
+#: app/templates/main/tools.html:1
+msgid "Fixer"
+msgstr "Посредник"
+
+#: app/templates/main/tools.html:1
+msgid "Priest"
+msgstr "Жрец"
+
+#: app/templates/main/tools.html:1
+msgid "Scholar"
+msgstr "Ученый"
+
+#: app/templates/main/tools.html:1
+msgid "Magician"
+msgstr "Маг"
+
+#: app/templates/main/tools.html:1
+msgid "Quartermaster"
+msgstr "Интендант"
+
+#: app/templates/main/tools.html:1
+msgid "Captain"
+msgstr "Капитан"
+
+#: app/templates/main/tools.html:1
+msgid "Character"
+msgstr "Характер"
+
+#: app/templates/main/tools.html:1
+msgid "Original Use"
+msgstr "Изначальное назначение"
+
+#: app/templates/main/tools.html:1
+msgid "Built By"
+msgstr "Кем построено"
+
+#: app/templates/main/tools.html:1
+msgid "Entrance"
+msgstr "Вход"
+
+#: app/templates/main/tools.html:1
+msgid "Composition"
+msgstr "Материал"
+
+#: app/templates/main/tools.html:1
+msgid "Condition"
+msgstr "Состояние"
+
+#: app/templates/main/tools.html:1
+msgid "Cause"
+msgstr "Причина"
+
+#: app/templates/main/tools.html:1
+msgid "Agent"
+msgstr "Агент"
+
+#: app/templates/main/tools.html:1
+msgid "Trait 1"
+msgstr "Черта 1"
+
+#: app/templates/main/tools.html:1
+msgid "Trait 2"
+msgstr "Черта 2"
+
+#: app/templates/main/tools.html:1
+msgid "Advantages"
+msgstr "Преимущества"
+
+#: app/templates/main/tools.html:1
+msgid "Agenda"
+msgstr "Замысел"
+
+#: app/templates/main/tools.html:1
+msgid "Obstacle"
+msgstr "Препятствие"
+
+#: app/templates/main/tools.html:1
+msgid "Unusual Weather (optional)"
+msgstr "Необычная погода (опционально)"
+
+#: app/templates/main/tools.html:1
+#, python-format
+msgid ""
+"Kettlewright is a free, open-source application for managing characters and "
+"parties for the %(cairn)s adventure game, currently in Beta. View the "
+"%(wiki)s, %(issues)s, or check out the %(source)s on GitHub."
+msgstr ""
+"Kettlewright — бесплатное приложение с открытым исходным кодом для "
+"управления персонажами и группами в приключенческой игре %(cairn)s, сейчас в"
+" бета-версии. Загляните в %(wiki)s, %(issues)s или изучите %(source)s на "
+"GitHub."
+
+#: app/templates/main/tools.html:1
+msgid "wiki"
+msgstr "вики"
+
+#: app/templates/main/tools.html:1
+msgid "submit issues"
+msgstr "сообщайте об ошибках"
+
+#: app/templates/main/tools.html:1
+msgid "source code"
+msgstr "исходный код"

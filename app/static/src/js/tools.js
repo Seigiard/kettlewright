@@ -32,13 +32,23 @@ const categories = {
   },
 };
 
+// Display labels come from the server-rendered translation map; values stay
+// English because they are used as lookup keys into the data object.
+const t = (key) => (window.KW_TOOLS_I18N && window.KW_TOOLS_I18N[key]) || key;
+
 // Setup Selects and Buttons
 const addOptionsToSelect = (data, element) => {
-  element.innerHTML = '<option value="" selected disabled>Choose...</option>';
+  element.innerHTML = "";
+  const placeholder = document.createElement("option");
+  placeholder.value = "";
+  placeholder.selected = true;
+  placeholder.disabled = true;
+  placeholder.text = t("Choose...");
+  element.add(placeholder);
   for (let key in data) {
     let option = document.createElement("option");
     option.value = key;
-    option.text = key;
+    option.text = t(key);
     element.add(option);
   }
 };
@@ -90,7 +100,7 @@ handleClick("#tools-copy-text-button", (event, element) => {
   const resultDisplay = document.getElementById("tools-result-display");
   const text = resultDisplay.innerText;
   navigator.clipboard.writeText(text);
-  styledAlert("Copy text", "Results copied to clipboard");
+  styledAlert(t("Copy text"), t("Results copied to clipboard"));
 });
 
 const roll = (sides) => {
@@ -103,7 +113,7 @@ const formatObjectToString = (obj) => {
     .filter(([key, value]) => !(Array.isArray(value) && value.length === 0))
     .map(([key, value]) => {
       let formattedValue = Array.isArray(value) ? value.join(", ") : value;
-      return `<b>${key}:</b> ${formattedValue}`;
+      return `<b>${t(key)}:</b> ${formattedValue}`;
     })
     .join("<br>");
 };
@@ -148,9 +158,9 @@ const rollMonsters = (data, subcategory) => {
     const formattedTraits = result.Traits.map((trait) =>
       trait.replace(/Critical Damage/g, "<b>Critical Damage</b>")
     );
-    const textResult = `<b><u>${result.Name}</u></b><br><br>HP: ${result.HP}, ${
-      result.Armor ? `Armor: ${result.Armor},` : ""
-    } STR: ${result.STR}, DEX: ${result.DEX}, WIL: ${result.WIL}${
+    const textResult = `<b><u>${result.Name}</u></b><br><br>${t("HP")}: ${result.HP}, ${
+      result.Armor ? `${t("Armor")}: ${result.Armor},` : ""
+    } ${t("STR")}: ${result.STR}, ${t("DEX")}: ${result.DEX}, ${t("WIL")}: ${result.WIL}${
       result.Attack ? `, ${result.Attack}<br><br>` : ""
     }• ${formattedTraits.join("<br>• ")}`;
     displayResult(textResult);
@@ -183,12 +193,12 @@ const rollMonsters = (data, subcategory) => {
       Monsters.MonsterAbilities.Target[
         roll(Monsters.MonsterAbilities.Target.length)
       ];
-    const textResult = `<b><u>Custom Monster</u></b><br><br><b>Physique:</b> ${physique}<br><b>Feature:</b> ${feature}<br><b>Quirks:</b> ${quirks}<br><b>Weakness:</b> ${weakness}<br><b>Attack:</b> ${attack}<br><b>Critical Damage:</b> ${criticalDamage}<br><b>Ability:</b> ${ability}<br><b>Target:</b> ${target}`;
+    const textResult = `<b><u>${t("Custom Monster")}</u></b><br><br><b>${t("Physique")}:</b> ${physique}<br><b>${t("Feature")}:</b> ${feature}<br><b>${t("Quirks")}:</b> ${quirks}<br><b>${t("Weakness")}:</b> ${weakness}<br><b>${t("Attack")}:</b> ${attack}<br><b>${t("Critical Damage")}:</b> ${criticalDamage}<br><b>${t("Ability")}:</b> ${ability}<br><b>${t("Target")}:</b> ${target}`;
     displayResult(textResult);
   } else if (subcategory === "Reaction Roll") {
     let roll = utils.roll(2, 6);
     const result = Monsters[roll - 2]; //2-12 -> 0-10
-    const textResult = `<b><u>Reaction Roll</u></b><br><br><b>${result}</b>`;
+    const textResult = `<b><u>${t("Reaction Roll")}</u></b><br><br><b>${result}</b>`;
     displayResult(textResult);
   }
 };
@@ -197,11 +207,11 @@ const rollEvents = (data, subcategory) => {
   const events = data[subcategory];
   if (subcategory === "Dungeon Events") {
     const result = events[roll(events.length)];
-    const textResult = `<b><u>Dungeon Event</u></b><br><br>${result.description}`;
+    const textResult = `<b><u>${t("Dungeon Event")}</u></b><br><br>${result.description}`;
     displayResult(textResult);
   } else if (subcategory === "Wilderness Events") {
     const result = events[roll(events.length)];
-    const textResult = `<b><u>Wilderness Event</u></b><br><br>${result.description}`;
+    const textResult = `<b><u>${t("Wilderness Event")}</u></b><br><br>${result.description}`;
     displayResult(textResult);
   }
 };
@@ -212,7 +222,7 @@ const rollWeather = (data, subcategory) => {
   const type = weather[roll(weather.length)];
   console.log(type);
   const difficulty = data.Difficulty[type];
-  const textResult = `<b><u>Weather</u></b><br><br><b>Season:</b> ${subcategory}<br><b>Type:</b> ${type}<br><b>Effect:</b> ${difficulty.Effect} <br><b>Examples:</b> ${difficulty.Examples}`;
+  const textResult = `<b><u>${t("Weather")}</u></b><br><br><b>${t("Season")}:</b> ${t(subcategory)}<br><b>${t("Type")}:</b> ${t(type)}<br><b>${t("Effect")}:</b> ${difficulty.Effect} <br><b>${t("Examples")}:</b> ${difficulty.Examples}`;
   displayResult(textResult);
 };
 
@@ -222,9 +232,9 @@ const rollRelics = (data, subcategory) => {
   let name = result.name;
   let weight = "";
   if (result.tags.includes("petty")) {
-    weight = " (petty)";
+    weight = ` (${t("petty")})`;
   } else if (result.tags.includes("bulky")) {
-    weight = " (bulky)";
+    weight = ` (${t("bulky")})`;
   }
 
   let tags = [];
@@ -235,7 +245,7 @@ const rollRelics = (data, subcategory) => {
       !["bulky", "petty", "uses", "charges", "use", "charge"].includes(tag)
   );
   if (regularTags.length > 0) {
-    tags.push(regularTags.join(", "));
+    tags.push(regularTags.map(t).join(", "));
   }
 
   // Add uses if present
@@ -410,7 +420,7 @@ const rollWorldbuilding = (data, subcategory) => {
     factions = {
       Name: name,
       Type: factionSetting.FactionTypes[roll(factionSetting.FactionTypes.length)],
-      Agent: agents[roll(agents.length)],
+      Agent: t(agents[roll(agents.length)]),
       "Trait 1":
         factionSetting.FactionTraits.Virtues[
           roll(factionSetting.FactionTraits.Virtues.length)
@@ -507,14 +517,14 @@ const rollWorldbuilding = (data, subcategory) => {
           setting.POIs.Monster.Activity[
             roll(setting.POIs.Monster.Activity.length)
           ];
-        result.POIs.push(`Monster: ${activity}, ${monsterType}`);
+        result.POIs.push(`${t("Monster")}: ${activity}, ${monsterType}`);
       }
       if (poi === "Lore") {
         const roomType =
           setting.POIs.Lore.RoomType[roll(setting.POIs.Lore.RoomType.length)];
         const clue =
           setting.POIs.Lore.Clue[roll(setting.POIs.Lore.Clue.length)];
-        result.POIs.push(`Lore: ${roomType}, ${clue}`);
+        result.POIs.push(`${t("Lore")}: ${roomType}, ${clue}`);
       }
       if (poi === "Special") {
         const special =
@@ -525,26 +535,26 @@ const rollWorldbuilding = (data, subcategory) => {
           setting.POIs.Special.Feature[
             roll(setting.POIs.Special.Feature.length)
           ];
-        result.POIs.push(`Special: ${special}, ${feature}`);
+        result.POIs.push(`${t("Special")}: ${special}, ${feature}`);
       }
       if (poi === "Trap") {
         const trap =
           setting.POIs.Trap.Trap[roll(setting.POIs.Trap.Trap.length)];
         const trigger =
           setting.POIs.Trap.Trigger[roll(setting.POIs.Trap.Trigger.length)];
-        result.POIs.push(`Trap: ${trap}, ${trigger}`);
+        result.POIs.push(`${t("Trap")}: ${trap}, ${trigger}`);
       }
     }
 
-    const textResult = `<b><u>Dungeon</u></b><br><br>${formatObjectToString(
+    const textResult = `<b><u>${t("Dungeon")}</u></b><br><br>${formatObjectToString(
       result.Purpose
     )}<br>${formatObjectToString(
       result.Construction
     )}<br>${formatObjectToString(
       result.Ruination
-    )}<br><br><b><u>Factions</u></b><br>${formatObjectToString(
+    )}<br><br><b><u>${t("Factions")}</u></b><br>${formatObjectToString(
       result.Factions
-    )}<br><br><b><u>Rooms:</u></b><br>${formatNumberedArrayToString(
+    )}<br><br><b><u>${t("Rooms")}:</u></b><br>${formatNumberedArrayToString(
       result.POIs
     )}`;
     displayResult(textResult);
@@ -601,7 +611,7 @@ const rollWorldbuilding = (data, subcategory) => {
           setting.ForestPOIs.Monster.Activity[
             roll(setting.ForestPOIs.Monster.Activity.length)
           ];
-        result.POIs.push(`Monster: ${activity}, ${monsterType}`);
+        result.POIs.push(`${t("Monster")}: ${activity}, ${monsterType}`);
       }
       if (poi === "Ruins") {
         const ruin =
@@ -612,7 +622,7 @@ const rollWorldbuilding = (data, subcategory) => {
           setting.ForestPOIs.Ruins.Feature[
             roll(setting.ForestPOIs.Ruins.Feature.length)
           ];
-        result.POIs.push(`Ruins: ${ruin}, ${feature}`);
+        result.POIs.push(`${t("Ruins")}: ${ruin}, ${feature}`);
       }
       if (poi === "Shelter") {
         const shelter =
@@ -623,7 +633,7 @@ const rollWorldbuilding = (data, subcategory) => {
           setting.ForestPOIs.Shelter.Feature[
             roll(setting.ForestPOIs.Shelter.Feature.length)
           ];
-        result.POIs.push(`Shelter: ${shelter}, ${feature}`);
+        result.POIs.push(`${t("Shelter")}: ${shelter}, ${feature}`);
       }
       if (poi === "Hazard") {
         const hazard =
@@ -634,7 +644,7 @@ const rollWorldbuilding = (data, subcategory) => {
           setting.ForestPOIs.Hazard.Feature[
             roll(setting.ForestPOIs.Hazard.Feature.length)
           ];
-        result.POIs.push(`Hazard: ${hazard}, ${feature}`);
+        result.POIs.push(`${t("Hazard")}: ${hazard}, ${feature}`);
       }
     }
     const name =
@@ -654,7 +664,7 @@ const rollWorldbuilding = (data, subcategory) => {
       result.trails.push(`${path}, ${type}, ${marker}`);
     }
 
-    const textResult = `<b><u>Forest</u></b><br><br>
+    const textResult = `<b><u>${t("Forest")}</u></b><br><br>
     <b>${name}</b><br><br>
     ${formatObjectToString(result.Traits)}<br>${formatObjectToString(
       result.Virtue
@@ -662,10 +672,10 @@ const rollWorldbuilding = (data, subcategory) => {
     <br>${formatObjectToString(result.Goal)}<br>${formatObjectToString(
       result.Obstacle
     )}
-    <br><br><b><u>Points of Interest</u></b><br>${formatNumberedArrayToString(
+    <br><br><b><u>${t("Points of Interest")}</u></b><br>${formatNumberedArrayToString(
       result.POIs
     )}
-    <br><br><b><u>Trails</u></b><br>${formatNumberedArrayToString(
+    <br><br><b><u>${t("Trails")}</u></b><br>${formatNumberedArrayToString(
       result.trails
     )}
     `;
@@ -707,7 +717,7 @@ const rollWorldbuilding = (data, subcategory) => {
         setting.Topography.Terrain[difficulty].Terrain[
           roll(setting.Topography.Terrain[difficulty].Terrain.length)
         ]
-      }. Difficulty: ${difficulty}. Landmark: ${
+      }. ${t("Difficulty")}: ${t(difficulty)}. ${t("Landmark")}: ${
         setting.Topography.Terrain[difficulty].Landmark[
           roll(setting.Topography.Terrain[difficulty].Landmark.length)
         ]
@@ -755,7 +765,7 @@ const rollWorldbuilding = (data, subcategory) => {
       const poiName = convertName(poiNameForumla, [
         { type: "Noun", word: noun },
         { type: "Adjective", word: adjective },
-        { type: "POI", word: type },
+        { type: "POI", word: t(type) },
       ]);
 
       if (type === "Waypoint") {
@@ -828,32 +838,32 @@ const rollWorldbuilding = (data, subcategory) => {
       { type: "Rulers", word: realmRulerType },
     ]);
 
-    const textResult = `<b><u>Realm</u></b><br><br>
+    const textResult = `<b><u>${t("Realm")}</u></b><br><br>
     <b>${realmName}</b><br><br>
-    <b><u>People</u></b><br>${formatObjectToString(
+    <b><u>${t("People")}</u></b><br>${formatObjectToString(
       result.Culture
     )}<br>${formatObjectToString(
       result.Resources
-    )}<br><br><b><u>Factions</u></b><br>${formatObjectToString(
+    )}<br><br><b><u>${t("Factions")}</u></b><br>${formatObjectToString(
       result.Factions
-    )}<br><br><b><u>Terrain</u></b><br>${formatNumberedArrayToString(
+    )}<br><br><b><u>${t("Terrain")}</u></b><br>${formatNumberedArrayToString(
       result.Terrain
-    )}<br><br><b><u>Weather</u></b><br>${formatObjectToString(
+    )}<br><br><b><u>${t("Weather")}</u></b><br>${formatObjectToString(
       result.Weather
-    )}<br><br><b><u>Points of Interest</u></b><br>${formatNumberedArrayToString(
+    )}<br><br><b><u>${t("Points of Interest")}</u></b><br>${formatNumberedArrayToString(
       result.POIs
     )}`;
     displayResult(textResult);
   } else if (subcategory === "Faction") {
     result = rollStandaloneFaction(setting);
-    const textResult = `<b><u>Faction</u></b><br><br>${formatObjectToString(
+    const textResult = `<b><u>${t("Faction")}</u></b><br><br>${formatObjectToString(
       result
     )}`;
     displayResult(textResult);
   } else if (subcategory === "Faction Actions") {
     const actions = setting;
     const action = actions[roll(actions.length)];
-    const textResult = `<b><u>Faction Action Result</u></b><br><br><b>Consequence:</b> ${action.Consequence}<br><b>Impact:</b> ${action.Impact}`;
+    const textResult = `<b><u>${t("Faction Action Result")}</u></b><br><br><b>${t("Consequence")}:</b> ${action.Consequence}<br><b>${t("Impact")}:</b> ${action.Impact}`;
     displayResult(textResult);
   } else if (subcategory === "NPC") {
     const name = setting.NPCNames.Names[roll(setting.NPCNames.Names.length)];
@@ -865,7 +875,7 @@ const rollWorldbuilding = (data, subcategory) => {
     const quirk = setting.NPCQuirks[roll(setting.NPCQuirks.length)];
     const goal = setting.NPCGoals.Goals[roll(setting.NPCGoals.Goals.length)];
 
-    const textResult = `<b><u>NPC</u></b><br><br><b>Name:</b> ${name}<br><b>Background:</b> ${background}<br><b>Virtue:</b> ${virtue}<br><b>Vice:</b> ${vice}<br><b>Quirk:</b> ${quirk}<br><b>Goal:</b> ${goal}`;
+    const textResult = `<b><u>${t("NPC")}</u></b><br><br><b>${t("Name")}:</b> ${name}<br><b>${t("Background")}:</b> ${background}<br><b>${t("Virtue")}:</b> ${virtue}<br><b>${t("Vice")}:</b> ${vice}<br><b>${t("Quirk")}:</b> ${quirk}<br><b>${t("Goal")}:</b> ${goal}`;
     displayResult(textResult);
   }
 };
