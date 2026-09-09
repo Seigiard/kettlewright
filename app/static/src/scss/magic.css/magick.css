@@ -62,7 +62,7 @@ body {
     font-size: 1.8rem; /* 1 */
     background-color: var(--bg); /* 2 */
     color: var(--fg); /* 2 */
-    font-family: "Averia Serif Libre", serif; /* 3 */
+    font-family: "Averia Serif Libre", Alegreya, 'Iowan Old Style', 'Palatino Linotype', 'URW Palladio L', P052, serif; /* 3 */
     font-style: normal; /* 3 */
     line-height: 2.2rem; /* 3 */
     font-weight: 300; /* 3 */
