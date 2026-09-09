@@ -20880,3 +20880,723 @@ msgstr "Это действие нельзя отменить."
 #: app/templates/auth/delete_account.html:9
 msgid "Warning:"
 msgstr "Внимание:"
+
+#: app/static/json/backgrounds:1
+msgid "Aasim"
+msgstr "Асим"
+
+#: app/static/json/backgrounds:1
+msgid "Ada"
+msgstr "Ада"
+
+#: app/static/json/backgrounds:1
+msgid "Adair"
+msgstr "Адэр"
+
+#: app/static/json/backgrounds:1
+msgid "Akshara"
+msgstr "Акшара"
+
+#: app/static/json/backgrounds:1
+msgid "Aldric"
+msgstr "Альдрик"
+
+#: app/static/json/backgrounds:1
+msgid "Aludel"
+msgstr "Алюдель"
+
+#: app/static/json/backgrounds:1
+msgid "Amara"
+msgstr "Амара"
+
+#: app/static/json/backgrounds:1
+msgid "Ambrose"
+msgstr "Амброз"
+
+#: app/static/json/backgrounds:1
+msgid "Arawan"
+msgstr "Араван"
+
+#: app/static/json/backgrounds:1
+msgid "Aria"
+msgstr "Ария"
+
+#: app/static/json/backgrounds:1
+msgid "Arlo"
+msgstr "Арло"
+
+#: app/static/json/backgrounds:1
+msgid "Artea"
+msgstr "Артеа"
+
+#: app/static/json/backgrounds:1
+msgid "Aster"
+msgstr "Астер"
+
+#: app/static/json/backgrounds:1
+msgid "Baladria"
+msgstr "Баладрия"
+
+#: app/static/json/backgrounds:1
+msgid "Barnaby"
+msgstr "Барнаби"
+
+#: app/static/json/backgrounds:1
+msgid "Baruani"
+msgstr "Баруани"
+
+#: app/static/json/backgrounds:1
+msgid "Basil"
+msgstr "Базиль"
+
+#: app/static/json/backgrounds:1
+msgid "Bea"
+msgstr "Беа"
+
+#: app/static/json/backgrounds:1
+msgid "Beatrix"
+msgstr "Беатрикс"
+
+#: app/static/json/backgrounds:1
+msgid "Beauregard"
+msgstr "Борегар"
+
+#: app/static/json/backgrounds:1
+msgid "Berek"
+msgstr "Берек"
+
+#: app/static/json/backgrounds:1
+msgid "Boreas"
+msgstr "Борей"
+
+#: app/static/json/backgrounds:1
+msgid "Bram"
+msgstr "Брэм"
+
+#: app/static/json/backgrounds:1
+msgid "Brie"
+msgstr "Бри"
+
+#: app/static/json/backgrounds:1
+msgid "Brielle"
+msgstr "Бриэль"
+
+#: app/static/json/backgrounds:1
+msgid "Brim"
+msgstr "Брим"
+
+#: app/static/json/backgrounds:1
+msgid "Brunhilda"
+msgstr "Брунгильда"
+
+#: app/static/json/backgrounds:1
+msgid "Bryn"
+msgstr "Брин"
+
+#: app/static/json/backgrounds:1
+msgid "Bull"
+msgstr "Бык"
+
+#: app/static/json/backgrounds:1
+msgid "Cai"
+msgstr "Кай"
+
+#: app/static/json/backgrounds:1
+msgid "Chayse"
+msgstr "Чейз"
+
+#: app/static/json/backgrounds:1
+msgid "Cliff"
+msgstr "Утес"
+
+#: app/static/json/backgrounds:1
+msgid "Cobb"
+msgstr "Початок"
+
+#: app/static/json/backgrounds:1
+msgid "Cornelius"
+msgstr "Корнелиус"
+
+#: app/static/json/backgrounds:1
+msgid "Crier"
+msgstr "Глашатай"
+
+#: app/static/json/backgrounds:1
+msgid "Current"
+msgstr "Поток"
+
+#: app/static/json/backgrounds:1
+msgid "Cutwell"
+msgstr "Острорез"
+
+#: app/static/json/backgrounds:1
+msgid "Cyra"
+msgstr "Кира"
+
+#: app/static/json/backgrounds:1
+msgid "Darius"
+msgstr "Дариус"
+
+#: app/static/json/backgrounds:1
+msgid "Darragh"
+msgstr "Дарра"
+
+#: app/static/json/backgrounds:1
+msgid "Delphine"
+msgstr "Дельфина"
+
+#: app/static/json/backgrounds:1
+msgid "Dev"
+msgstr "Дев"
+
+#: app/static/json/backgrounds:1
+msgid "Dibber"
+msgstr "Колышек"
+
+#: app/static/json/backgrounds:1
+msgid "Dirk"
+msgstr "Дирк"
+
+#: app/static/json/backgrounds:1
+msgid "Drake"
+msgstr "Дрейк"
+
+#: app/static/json/backgrounds:1
+msgid "Eamon"
+msgstr "Эймон"
+
+#: app/static/json/backgrounds:1
+msgid "Ebon"
+msgstr "Эбен"
+
+#: app/static/json/backgrounds:1
+msgid "Eira"
+msgstr "Эйра"
+
+#: app/static/json/backgrounds:1
+msgid "Elara"
+msgstr "Элара"
+
+#: app/static/json/backgrounds:1
+msgid "Eon"
+msgstr "Эон"
+
+#: app/static/json/backgrounds:1
+msgid "Falcon"
+msgstr "Сокол"
+
+#: app/static/json/backgrounds:1
+msgid "Faunus"
+msgstr "Фавн"
+
+#: app/static/json/backgrounds:1
+msgid "Feather"
+msgstr "Перо"
+
+#: app/static/json/backgrounds:1
+msgid "Felix"
+msgstr "Феликс"
+
+#: app/static/json/backgrounds:1
+msgid "Fergus"
+msgstr "Фергус"
+
+#: app/static/json/backgrounds:1
+msgid "Flax"
+msgstr "Лен"
+
+#: app/static/json/backgrounds:1
+msgid "Flint"
+msgstr "Кремень"
+
+#: app/static/json/backgrounds:1
+msgid "Freki"
+msgstr "Фреки"
+
+#: app/static/json/backgrounds:1
+msgid "Freya"
+msgstr "Фрейя"
+
+#: app/static/json/backgrounds:1
+msgid "Gale"
+msgstr "Шквал"
+
+#: app/static/json/backgrounds:1
+msgid "Galen"
+msgstr "Гален"
+
+#: app/static/json/backgrounds:1
+msgid "Gann"
+msgstr "Ганн"
+
+#: app/static/json/backgrounds:1
+msgid "Gerrik"
+msgstr "Геррик"
+
+#: app/static/json/backgrounds:1
+msgid "Goodeye"
+msgstr "Верный Глаз"
+
+#: app/static/json/backgrounds:1
+msgid "Gossamer"
+msgstr "Паутинка"
+
+#: app/static/json/backgrounds:1
+msgid "Harrow"
+msgstr "Борона"
+
+#: app/static/json/backgrounds:1
+msgid "Hawk"
+msgstr "Ястреб"
+
+#: app/static/json/backgrounds:1
+msgid "Hazel"
+msgstr "Лещина"
+
+#: app/static/json/backgrounds:1
+msgid "Hester"
+msgstr "Хестер"
+
+#: app/static/json/backgrounds:1
+msgid "Hestia"
+msgstr "Гестия"
+
+#: app/static/json/backgrounds:1
+msgid "Hilda"
+msgstr "Хильда"
+
+#: app/static/json/backgrounds:1
+msgid "Hugo"
+msgstr "Гуго"
+
+#: app/static/json/backgrounds:1
+msgid "Humor"
+msgstr "Юмор"
+
+#: app/static/json/backgrounds:1
+msgid "Idris"
+msgstr "Идрис"
+
+#: app/static/json/backgrounds:1
+msgid "Indigo"
+msgstr "Индиго"
+
+#: app/static/json/backgrounds:1
+msgid "Isolde"
+msgstr "Изольда"
+
+#: app/static/json/backgrounds:1
+msgid "Ivor"
+msgstr "Айвор"
+
+#: app/static/json/backgrounds:1
+msgid "Ivy"
+msgstr "Плющ"
+
+#: app/static/json/backgrounds:1
+msgid "Iwan"
+msgstr "Иван"
+
+#: app/static/json/backgrounds:1
+msgid "Jax"
+msgstr "Джакс"
+
+#: app/static/json/backgrounds:1
+msgid "Jazia"
+msgstr "Джазия"
+
+#: app/static/json/backgrounds:1
+msgid "Ji-Yun"
+msgstr "Джи-Юн"
+
+#: app/static/json/backgrounds:1
+msgid "Johanna"
+msgstr "Иоганна"
+
+#: app/static/json/backgrounds:1
+msgid "Jory"
+msgstr "Джори"
+
+#: app/static/json/backgrounds:1
+msgid "Jubilo"
+msgstr "Джубило"
+
+#: app/static/json/backgrounds:1
+msgid "Julius"
+msgstr "Юлиус"
+
+#: app/static/json/backgrounds:1
+msgid "Kalam"
+msgstr "Калам"
+
+#: app/static/json/backgrounds:1
+msgid "Kalamos"
+msgstr "Каламос"
+
+#: app/static/json/backgrounds:1
+msgid "Keir"
+msgstr "Кир"
+
+#: app/static/json/backgrounds:1
+msgid "Lal"
+msgstr "Лал"
+
+#: app/static/json/backgrounds:1
+msgid "Lancet"
+msgstr "Ланцет"
+
+#: app/static/json/backgrounds:1
+msgid "Landsford"
+msgstr "Лэндсфорд"
+
+#: app/static/json/backgrounds:1
+msgid "Lantos"
+msgstr "Лантос"
+
+#: app/static/json/backgrounds:1
+msgid "Lazlo"
+msgstr "Лазло"
+
+#: app/static/json/backgrounds:1
+msgid "Leder"
+msgstr "Ледер"
+
+#: app/static/json/backgrounds:1
+msgid "Leif"
+msgstr "Лейф"
+
+#: app/static/json/backgrounds:1
+msgid "Leth"
+msgstr "Лет"
+
+#: app/static/json/backgrounds:1
+msgid "Lorenz"
+msgstr "Лоренц"
+
+#: app/static/json/backgrounds:1
+msgid "Lucius"
+msgstr "Люциус"
+
+#: app/static/json/backgrounds:1
+msgid "Lyra"
+msgstr "Лира"
+
+#: app/static/json/backgrounds:1
+msgid "Madrigal"
+msgstr "Мадригал"
+
+#: app/static/json/backgrounds:1
+msgid "Matheus"
+msgstr "Матеус"
+
+#: app/static/json/backgrounds:1
+msgid "Mireille"
+msgstr "Мирей"
+
+#: app/static/json/backgrounds:1
+msgid "Mordant"
+msgstr "Мордант"
+
+#: app/static/json/backgrounds:1
+msgid "Moro"
+msgstr "Моро"
+
+#: app/static/json/backgrounds:1
+msgid "Morth"
+msgstr "Морт"
+
+#: app/static/json/backgrounds:1
+msgid "Mourella"
+msgstr "Мурелла"
+
+#: app/static/json/backgrounds:1
+msgid "Needle"
+msgstr "Игла"
+
+#: app/static/json/backgrounds:1
+msgid "Noa"
+msgstr "Ноа"
+
+#: app/static/json/backgrounds:1
+msgid "Nuja"
+msgstr "Нуджа"
+
+#: app/static/json/backgrounds:1
+msgid "Nyx"
+msgstr "Никс"
+
+#: app/static/json/backgrounds:1
+msgid "Oswin"
+msgstr "Освин"
+
+#: app/static/json/backgrounds:1
+msgid "Pall"
+msgstr "Саван"
+
+#: app/static/json/backgrounds:1
+msgid "Patch"
+msgstr "Латка"
+
+#: app/static/json/backgrounds:1
+msgid "Per"
+msgstr "Пер"
+
+#: app/static/json/backgrounds:1
+msgid "Percival"
+msgstr "Персиваль"
+
+#: app/static/json/backgrounds:1
+msgid "Piper"
+msgstr "Дудочник"
+
+#: app/static/json/backgrounds:1
+msgid "Pisa"
+msgstr "Пиза"
+
+#: app/static/json/backgrounds:1
+msgid "Pluck"
+msgstr "Задор"
+
+#: app/static/json/backgrounds:1
+msgid "Prism"
+msgstr "Призма"
+
+#: app/static/json/backgrounds:1
+msgid "Quintess"
+msgstr "Квинтэсс"
+
+#: app/static/json/backgrounds:1
+msgid "Ragnar"
+msgstr "Рагнар"
+
+#: app/static/json/backgrounds:1
+msgid "Ratan"
+msgstr "Ратан"
+
+#: app/static/json/backgrounds:1
+msgid "Raven"
+msgstr "Ворон"
+
+#: app/static/json/backgrounds:1
+msgid "Razvan"
+msgstr "Разван"
+
+#: app/static/json/backgrounds:1
+msgid "Reed"
+msgstr "Тростник"
+
+#: app/static/json/backgrounds:1
+msgid "Robin"
+msgstr "Малиновка"
+
+#: app/static/json/backgrounds:1
+msgid "Rook"
+msgstr "Грач"
+
+#: app/static/json/backgrounds:1
+msgid "Rorik"
+msgstr "Рорик"
+
+#: app/static/json/backgrounds:1
+msgid "Rowena"
+msgstr "Ровена"
+
+#: app/static/json/backgrounds:1
+msgid "Rui"
+msgstr "Руй"
+
+#: app/static/json/backgrounds:1
+msgid "Rune"
+msgstr "Руна"
+
+#: app/static/json/backgrounds:1
+msgid "Rye"
+msgstr "Рожь"
+
+#: app/static/json/backgrounds:1
+msgid "Rónán"
+msgstr "Ронан"
+
+#: app/static/json/backgrounds:1
+msgid "Sabine"
+msgstr "Сабина"
+
+#: app/static/json/backgrounds:1
+msgid "Sable"
+msgstr "Соболь"
+
+#: app/static/json/backgrounds:1
+msgid "Salaman"
+msgstr "Саламан"
+
+#: app/static/json/backgrounds:1
+msgid "Salina"
+msgstr "Салина"
+
+#: app/static/json/backgrounds:1
+msgid "Saoirse"
+msgstr "Сирша"
+
+#: app/static/json/backgrounds:1
+msgid "Sawbones"
+msgstr "Костоправ"
+
+#: app/static/json/backgrounds:1
+msgid "Saylor"
+msgstr "Сейлор"
+
+#: app/static/json/backgrounds:1
+msgid "Seed"
+msgstr "Зерно"
+
+#: app/static/json/backgrounds:1
+msgid "Selene"
+msgstr "Селена"
+
+#: app/static/json/backgrounds:1
+msgid "Seren"
+msgstr "Серен"
+
+#: app/static/json/backgrounds:1
+msgid "Shui"
+msgstr "Шуй"
+
+#: app/static/json/backgrounds:1
+msgid "Silas"
+msgstr "Сайлас"
+
+#: app/static/json/backgrounds:1
+msgid "Silverdew"
+msgstr "Сребророса"
+
+#: app/static/json/backgrounds:1
+msgid "Snowdrop"
+msgstr "Подснежник"
+
+#: app/static/json/backgrounds:1
+msgid "Solena"
+msgstr "Солена"
+
+#: app/static/json/backgrounds:1
+msgid "Solene"
+msgstr "Солен"
+
+#: app/static/json/backgrounds:1
+msgid "Solstice"
+msgstr "Солнцеворот"
+
+#: app/static/json/backgrounds:1
+msgid "Soren"
+msgstr "Сорен"
+
+#: app/static/json/backgrounds:1
+msgid "Sow"
+msgstr "Сев"
+
+#: app/static/json/backgrounds:1
+msgid "Sparrow"
+msgstr "Воробей"
+
+#: app/static/json/backgrounds:1
+msgid "Stalk"
+msgstr "Стебель"
+
+#: app/static/json/backgrounds:1
+msgid "Steeleye"
+msgstr "Сталеглаз"
+
+#: app/static/json/backgrounds:1
+msgid "Stilo"
+msgstr "Стило"
+
+#: app/static/json/backgrounds:1
+msgid "Talon"
+msgstr "Коготь"
+
+#: app/static/json/backgrounds:1
+msgid "Theo"
+msgstr "Тео"
+
+#: app/static/json/backgrounds:1
+msgid "Theron"
+msgstr "Терон"
+
+#: app/static/json/backgrounds:1
+msgid "Thresh"
+msgstr "Обмолот"
+
+#: app/static/json/backgrounds:1
+msgid "Toph"
+msgstr "Тоф"
+
+#: app/static/json/backgrounds:1
+msgid "Tripp"
+msgstr "Трипп"
+
+#: app/static/json/backgrounds:1
+msgid "Unther"
+msgstr "Унтер"
+
+#: app/static/json/backgrounds:1
+msgid "Valen"
+msgstr "Вален"
+
+#: app/static/json/backgrounds:1
+msgid "Veda"
+msgstr "Веда"
+
+#: app/static/json/backgrounds:1
+msgid "Veles"
+msgstr "Велес"
+
+#: app/static/json/backgrounds:1
+msgid "Vesper"
+msgstr "Веспер"
+
+#: app/static/json/backgrounds:1
+msgid "Vex"
+msgstr "Векс"
+
+#: app/static/json/backgrounds:1
+msgid "Warsong"
+msgstr "Песнь Войны"
+
+#: app/static/json/backgrounds:1
+msgid "Wilmot"
+msgstr "Уилмот"
+
+#: app/static/json/backgrounds:1
+msgid "Winda"
+msgstr "Винда"
+
+#: app/static/json/backgrounds:1
+msgid "Wisp"
+msgstr "Огонек"
+
+#: app/static/json/backgrounds:1
+msgid "Wolfram"
+msgstr "Вольфрам"
+
+#: app/static/json/backgrounds:1
+msgid "Woozy"
+msgstr "Дурман"
+
+#: app/static/json/backgrounds:1
+msgid "Wren"
+msgstr "Крапивник"
+
+#: app/static/json/backgrounds:1
+msgid "Wulf"
+msgstr "Вульф"
+
+#: app/static/json/backgrounds:1
+msgid "Yara"
+msgstr "Яра"
+
+#: app/static/json/backgrounds:1
+msgid "Yew"
+msgstr "Тис"
+
+#: app/blueprints/charcreo.py:23
+msgid "** Custom **"
+msgstr "** Свое имя **"
