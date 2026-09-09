@@ -2388,7 +2388,7 @@ msgstr "Нишпорка"
 
 #: app/static/json/backgrounds/rill-runner.json:1
 msgid "Rill Runner"
-msgstr "Струмкохід"
+msgstr "Ходій ручаїв"
 
 #: app/static/json/backgrounds/scrivener.json:1
 msgid "Scrivener"
