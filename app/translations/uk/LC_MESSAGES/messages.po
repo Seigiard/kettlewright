@@ -20770,3 +20770,31 @@ msgstr "повідомляйте про помилки"
 #: app/templates/main/tools.html:1
 msgid "source code"
 msgstr "вихідний код"
+
+#: app/forms.py:310
+msgid "Confirm Password"
+msgstr "Підтвердьте пароль"
+
+#: app/templates/auth/delete_account.html:13
+msgid "Confirm your password"
+msgstr "Підтвердьте свій пароль"
+
+#: app/templates/auth/account.html:22
+msgid "Delete Account"
+msgstr "Видалення облікового запису"
+
+#: app/forms.py:311
+msgid "Delete My Account"
+msgstr "Видалити мій обліковий запис"
+
+#: app/templates/auth/delete_account.html:15
+msgid "Enter your password"
+msgstr "Введіть пароль"
+
+#: app/templates/auth/delete_account.html:9
+msgid "This action cannot be undone."
+msgstr "Цю дію неможливо скасувати."
+
+#: app/templates/auth/delete_account.html:9
+msgid "Warning:"
+msgstr "Увага:"
