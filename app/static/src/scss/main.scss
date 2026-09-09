@@ -894,3 +894,30 @@ button,
 .center-input {
   text-align: center;
 }
+// Cyrillic locales: Averia has no Cyrillic glyphs, so Latin-first stacks render
+// mixed text in two different faces. Put Alegreya first for a uniform look.
+html[lang="ru"],
+html[lang="uk"] {
+
+  body,
+  textarea,
+  select {
+    font-family: Alegreya, "Averia Serif Libre", 'Iowan Old Style', 'Palatino Linotype', 'URW Palladio L', P052, serif;
+  }
+
+  body {
+    // Alegreya has no 300 weight; avoid faux-light rendering
+    font-weight: 400;
+  }
+
+  input {
+    font-family: Alegreya, "Averia Serif Libre", 'Iowan Old Style', 'Palatino Linotype', 'URW Palladio L', P052, serif !important;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    font-family: Alegreya, "Averia Libre", 'Iowan Old Style', 'Palatino Linotype', 'URW Palladio L', P052, serif;
+  }
+}
