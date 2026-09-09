@@ -21517,4 +21517,4 @@ msgstr "Тис"
 
 #: app/blueprints/charcreo.py:23
 msgid "** Custom **"
-msgstr "** Власне ім’я **"
+msgstr "** Власне **"
