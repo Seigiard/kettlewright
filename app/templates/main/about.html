@@ -10,9 +10,9 @@
     <p>
       {{ _('Kettlewright is a free, open-source application for managing characters and parties for the %(cairn)s adventure game, currently in Beta. View the %(wiki)s, %(issues)s, or check out the %(source)s on GitHub.',
       cairn='<a href="https://cairnrpg.com" target="_blank" rel="noopener noreferrer">Cairn</a>' | safe,
-      wiki=('<a href="https://github.com/yochaigal/kettlewright/wiki" target="_blank" rel="noopener noreferrer">' + _('wiki') + '</a>') | safe,
-      issues=('<a href="https://github.com/yochaigal/kettlewright/issues" target="_blank" rel="noopener noreferrer">' + _('submit issues') + '</a>') | safe,
-      source=('<a href="https://github.com/yochaigal/kettlewright" target="_blank" rel="noopener noreferrer">' + _('source code') + '</a>') | safe
+      wiki=('<a href="https://github.com/yochaigal/kettlewright/wiki" target="_blank" rel="noopener noreferrer">%s</a>' | format(_('wiki'))) | safe,
+      issues=('<a href="https://github.com/yochaigal/kettlewright/issues" target="_blank" rel="noopener noreferrer">%s</a>' | format(_('submit issues'))) | safe,
+      source=('<a href="https://github.com/yochaigal/kettlewright" target="_blank" rel="noopener noreferrer">%s</a>' | format(_('source code'))) | safe
       ) | safe }}
     </p>
   </section>
