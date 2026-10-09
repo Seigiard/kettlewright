@@ -1,0 +1,19 @@
+glob_matcher: doublestar
+
+pre-commit:
+  piped: true
+  jobs:
+    - name: python-syntax
+      glob: '**/*.py'
+      run: python3 -m py_compile {staged_files}
+    - name: javascript-syntax
+      glob: '**/*.{js,cjs,mjs}'
+      exclude:
+        - 'app/static/vendor/**'
+        - 'app/obsolete/**'
+      run: for file in {staged_files}; do node --check "$file" || exit; done
+    - name: shell-syntax
+      glob: '**/*.sh'
+      run: for file in {staged_files}; do bash -n "$file" || exit; done
+    - name: whitespace
+      run: git diff --cached --check
